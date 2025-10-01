@@ -5,7 +5,6 @@ type galleryProps = {
 }
 
 export function Gallery({category}: galleryProps) {
-  console.log(chillingImagePaths)
   return (
     <>
       {category === 'chilling' && chillingImagePaths.map((imgPath) => [crypto.randomUUID(), imgPath]).map((curImage) => <img key={curImage[0]} src={curImage[1]}/>)}

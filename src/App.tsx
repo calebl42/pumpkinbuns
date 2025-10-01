@@ -12,10 +12,10 @@ export function App() {
           Pumpkin's Bakery
         </h1>
         <nav>
-          <a href="#" onClick={(e) => setCurrentCategory('chilling')}>chilling</a>
-          <a href="#" onClick={(e) => setCurrentCategory('running')}>running</a>
-          <a href="#" onClick={(e) => setCurrentCategory('eating')}>eating</a>
-          <a href="#" onClick={(e) => setCurrentCategory('sleeping')}>sleeping</a>
+          <button onClick={(e) => setCurrentCategory('chilling')}>chilling</button>
+          <button onClick={(e) => setCurrentCategory('running')}>running</button>
+          <button onClick={(e) => setCurrentCategory('eating')}>eating</button>
+          <button onClick={(e) => setCurrentCategory('sleeping')}>sleeping</button>
         </nav>
       </header>
       <main>
