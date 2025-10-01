@@ -1,7 +1,10 @@
 import "./index.css";
 import Gallery from "./Gallery";
+import { useState } from "react";
 
 export function App() {
+  const [ currentCategory, setCurrentCategory ] = useState("chilling");
+
   return (
     <>
       <header>
@@ -9,15 +12,14 @@ export function App() {
           Pumpkin's Bakery
         </h1>
         <nav>
-          <a href="#">eating</a>
-          <a href="#">sleeping</a>
-          <a href="#">running</a>
-          <a href="#">grooming</a>
-          <a href="#">idk</a>
+          <a href="#" onClick={(e) => setCurrentCategory('chilling')}>chilling</a>
+          <a href="#" onClick={(e) => setCurrentCategory('running')}>running</a>
+          <a href="#" onClick={(e) => setCurrentCategory('eating')}>eating</a>
+          <a href="#" onClick={(e) => setCurrentCategory('sleeping')}>sleeping</a>
         </nav>
       </header>
       <main>
-        <Gallery />
+        <Gallery category={currentCategory}/>
       </main>
       <footer>
         2025 Caleb Lee

@@ -11,7 +11,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5vh;
+  gap: 20px;
 }
 
 nav {
@@ -22,11 +22,21 @@ nav {
 }
 
 main {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5vw;
+  padding: 5vw;
 }
 
 footer {
   display: flex;
   justify-content: center;
   height: 50px;
+}
+
+img {
+  max-width: 40vw;
+  max-height: 80vh;
 }
